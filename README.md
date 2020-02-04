@@ -9,8 +9,7 @@ https://pypi.org/project/langua/
 
 https://pypi.org/project/langid/1.1dev/  
 https://pypi.org/project/googletrans/  
-https://pypi.org/project/py-translate/  
-https://pypi.org/project/polyglot/  
+
   
 Data Downloaded from   
 http://insideairbnb.com/get-the-data.html  
