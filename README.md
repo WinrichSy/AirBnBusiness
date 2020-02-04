@@ -6,6 +6,11 @@ https://pypi.org/project/iso-639/
 https://pypi.org/project/langdetect/  
 https://pypi.org/project/pycountry/  
 https://pypi.org/project/langua/  
+
+https://pypi.org/project/langid/1.1dev/  
+https://pypi.org/project/googletrans/  
+https://pypi.org/project/py-translate/  
+https://pypi.org/project/polyglot/  
   
 Data Downloaded from   
 http://insideairbnb.com/get-the-data.html  
