@@ -75,4 +75,8 @@ root
  |-- comments: string (nullable = true)  
  |-- language_code: string (nullable = true)  
  |-- language: string (nullable = true)  
- 
+  
+Future Plans:  
+If given more time, would try to tokenize based of language.  
+OR  
+Find a way to translate through all without hitting requests limit with googletrans module.
