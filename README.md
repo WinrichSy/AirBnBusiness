@@ -57,17 +57,6 @@ root
    
 2. reviews.csv: (1310351 rows, 6 columns) 441.3 MB
 root  
- |-- c0: integer (nullable = true)  
- |-- listing_id: integer (nullable = true)  
- |-- date: timestamp (nullable = true)  
- |-- available: string (nullable = true)  
- |-- price: string (nullable = true)  
- |-- adjusted_price: string (nullable = true)  
- |-- minimum_nights: double (nullable = true)  
- |-- maximum_nights: double (nullable = true)  
-
-3. calendar.csv: (23905452 rows, 7 columns) 1.02 GB
-root  
  |-- c0: string (nullable = true)  
  |-- listing_id: string (nullable = true)  
  |-- date: string (nullable = true)  
@@ -75,6 +64,20 @@ root
  |-- comments: string (nullable = true)  
  |-- language_code: string (nullable = true)  
  |-- language: string (nullable = true)  
+
+3. calendar.csv: (23905452 rows, 7 columns) 1.02 GB
+root  
+ |-- c0: integer (nullable = true)  
+ |-- listing_id: integer (nullable = true)  
+ |-- date: timestamp (nullable = true)  
+ |-- available: string (nullable = true)  
+ |-- price: string (nullable = true)  
+ |-- minimum_nights: double (nullable = true)  
+ |-- maximum_nights: double (nullable = true)
+ |-- week: int (nullable = true)
+ |-- month: int (nullable = true)
+ |-- year: int (nullable = true)
+
   
 Future Plans:  
 If given more time, would try to tokenize based of language.  
