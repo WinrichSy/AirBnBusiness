@@ -1,10 +1,6 @@
-This is my readme. will update
+# **AirBnBusiness** 
 
-
-Modules used:  
-https://pypi.org/project/iso-639/  
-https://pypi.org/project/langdetect/  
-https://pypi.org/project/langua/  
+AirBnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that location. There is a wide selection of properties for travelers to rent for a period of time. Hosts don't have to pay to list their properties on AirBnb's marketplace and they can also set their own pricing. Locals in the area can also list their services and guides to entertain guests as well. With over tens of millions of users a year, the number of listings as well as competitiveness of bringing in renters have increased. As of 2019, AirBnb was last evaluated at $31 billion. My project here is to get a better understanding of the ins and outs of being a successful host on Airbnb. 
   
 Data Downloaded from   
 http://insideairbnb.com/get-the-data.html  
@@ -78,13 +74,15 @@ root
  |-- month: int (nullable = true)
  |-- year: int (nullable = true)
 
+Modules used:  
+https://pypi.org/project/iso-639/  
+https://pypi.org/project/langdetect/  
+https://pypi.org/project/langua/  
   
 Future Plans:  
-If given more time, would try to tokenize based of language.  
-OR  
-Find a way to translate through all without hitting requests limit with googletrans module.
-AND  
-Add more previous years  
-Normalizing data of superhost to regular hosts  
-AND  
-doing time series on pricing  
+1. If given more time, would try to tokenize based of language.  
+2. Find a way to translate through all without hitting requests limit with googletrans module.
+3. Add dataset of previous years  
+4. Create a time series and predictor on pricing
+
+version 1.0 - EDA on Superhosts on Airbnb, number of listings available, average pricing. 
