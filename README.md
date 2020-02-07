@@ -83,5 +83,8 @@ Future Plans:
 If given more time, would try to tokenize based of language.  
 OR  
 Find a way to translate through all without hitting requests limit with googletrans module.
-AND
-Add more previous years
+AND  
+Add more previous years  
+Normalizing data of superhost to regular hosts  
+AND  
+doing time series on pricing  
