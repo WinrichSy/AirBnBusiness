@@ -77,14 +77,14 @@ Only 12.81% of AirBnb hosts in Paris are verified Superhosts.
 ### <a id="4a">4a. Models WITH Verification Dummies</a>
 Fitted the dataset into a Logistic Regression, Gradient Boosting, Random Forest, and Decision Tree model. This ROC curve 
 shows the true positive rate against the false positive rate.
-<p align="center"><img src="AirBnBusiness/AirBnb Capstone Graphs/6.1 ROC curve w verification dummies.png"></p>
+<p align="center"><img src="AirBnb Capstone Graphs/6.1 ROC curve w verification dummies.png"></p>
 
 <p align="center"><img src="AirBnb Capstone Graphs/6.1 Values from Models w verification dummies.png"></p>
  
 ### <a id="4b">4b. Models without Verification Dummies</a>
 Modified model to take in training set without Dummies of Host Verifications and saw a slight increase in average accuracy 
 and an increase in average recall.
-<p align="center"><img src="AirBnb Capstone Graphs/6.2 ROC curve w_o verification dummies.pngg"></p>
+<p align="center"><img src="AirBnb Capstone Graphs/6.2 ROC curve w_o verification dummies.png"></p>
 
 <p align="center"><img src="AirBnb Capstone Graphs/6.2 Values from Models w_o verification dummies.png"></p>
 
