@@ -32,68 +32,16 @@ http://insideairbnb.com/get-the-data.html
 ### <a id="data">2a. About the Data</a>
 Paris -   
 1. listings.csv: (65493 rows, 106 columns) 241.3 MB  
-root  
- |-- id: string (nullable = true)  
- |-- name: string (nullable = true)  
- |-- summary: string (nullable = true)  
- |-- space: string (nullable = true)  
- |-- description: string (nullable = true)  
- |-- host_id: string (nullable = true)  
- |-- host_since: string (nullable = true)  
- |-- host_about: string (nullable = true)  
- |-- host_response_time: string (nullable = true)  
- |-- host_response_rate: string (nullable = true)  
- |-- host_is_superhost: string (nullable = true)  
- |-- host_total_listings_count: string (nullable = true)  
- |-- host_verifications: string (nullable = true)  
- |-- host_has_profile_pic: string (nullable = true)  
- |-- host_identity_verified: string (nullable = true)  
- |-- latitude: string (nullable = true)  
- |-- longitude: string (nullable = true)  
- |-- property_type: string (nullable = true)  
- |-- accommodates: string (nullable = true)  
- |-- bathrooms: string (nullable = true)  
- |-- bedrooms: string (nullable = true)  
- |-- beds: string (nullable = true)  
- |-- amenities: string (nullable = true)  
- |-- price: string (nullable = true)  
- |-- security_deposit: string (nullable = true)  
- |-- cleaning_fee: string (nullable = true)  
- |-- minimum_nights: string (nullable = true)  
- |-- number_of_reviews: string (nullable = true)  
- |-- review_scores_rating: string (nullable = true)  
- |-- review_scores_accuracy: string (nullable = true)  
- |-- review_scores_cleanliness: string (nullable = true)  
- |-- review_scores_checkin: string (nullable = true)  
- |-- review_scores_communication: string (nullable = true)  
- |-- review_scores_location: string (nullable = true)  
- |-- review_scores_value: string (nullable = true)  
- |-- cancellation_policy: string (nullable = true)  
- |-- requires_license: string (nullable = true)  
- |-- reviews_per_month: string (nullable = true)  
- |-- require_guest_phone_verification: string (nullable = true)  
- |-- language: string (nullable = true)  
+Attributes: 
+id, name, summary, space, description, host_id, host_since, host_about, host_response_time, host_response_rate, host_is_superhost, host_total_listings_count, host_verifications, host_has_profile_pic, host_identity_verified, latitude, longitude, property_type, accommodates, bathrooms, bedrooms, beds, amenities, price, security_deposit, cleaning_fee, minimum_nights, number_of_reviews, review_scores_rating, review_scores_accuracy, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value, cancellation_policy, requires_license, reviews_per_month, require_guest_phone_verification, language.
    
 2. reviews.csv: (1310351 rows, 6 columns) 441.3 MB  
-root  
- |-- listing_id: string (nullable = true)  
- |-- date: string (nullable = true)  
- |-- reviewer_id: string (nullable = true)  
- |-- comments: string (nullable = true)  
- |-- language_code: string (nullable = true)  
- |-- language: string (nullable = true)  
-
+Attributes:  
+listing_id, date, reviewer_id, comments, language_code, language.
+  
 3. calendar.csv: (23905452 rows, 7 columns) 1.02 GB  
-root  
- |-- listing_id: integer (nullable = true)  
- |-- date: timestamp (nullable = true)  
- |-- available: string (nullable = true)  
- |-- price: string (nullable = true)  
- |-- minimum_nights: double (nullable = true)  
- |-- maximum_nights: double (nullable = true)
- |-- week: int (nullable = true)
- |-- month: int (nullable = true)
- |-- year: int (nullable = true)
+Attributes:  
+listing_id, date, available, price, minimum_nights, maximum_nights, week (generated), month (generated), year (generated).
  
 ---
 ## <a id="EDA">Exploratory Data Analysis</a>
@@ -116,24 +64,34 @@ amount of available listings. Whereas January, March, and May have the most list
 <p align="center"><img src="AirBnb Capstone Graphs/3. Number of Listings per Month.png"></p>
 
 ### <a id="3d">3d. Number of Listings Per Host</a>
+49580 AirBnb Hosts have between 1 to 12 listings. A few amount of hosts have more than 45 properties listed.
 <p align="center"><img src="AirBnb Capstone Graphs/4.1 Number of Listings per host.png"></p>
+Looking further into the 1 to 12 histogram bar, 42614 hosts only have one property listed. There are 4872 hosts with two properties listed.
+<p align="center"><img src="AirBnb Capstone Graphs/4.2 Inner Number of Listings per host.png"></p>
 
 ### <a id="3e">3e. Hosts vs Superhosts</a>
-<p align="center"><img src="AirBnb Capstone Graphs/4.2 Inner Number of Listings per host.png"></p>
+Only 12.81% of AirBnb hosts in Paris are verified Superhosts.
+<p align="center"><img src="AirBnb Capstone Graphs/5. Hist - Hosts vs Superhosts.png"></p>
 
 ---
 ## <a id="Modeling">Modeling</a>
-<p align="center"><img src="AirBnb Capstone Graphs/1.1 Hist - Listings based on daily price.png"></p>
+### <a id="4a">4a. Models WITH Verification Dummies</a>
+Fitted the dataset into a Logistic Regression, Gradient Boosting, Random Forest, and Decision Tree model. This ROC curve 
+shows the true positive rate against the false positive rate.
+<p align="center"><img src="AirBnBusiness/AirBnb Capstone Graphs/6.1 ROC curve w verification dummies.png"></p>
 
-### <a id="4a">4a. Models without Verification Dummies</a>
- <p align="center"><img src="AirBnb Capstone Graphs/1.1 Hist - Listings based on daily price.png"></p>
+<p align="center"><img src="AirBnb Capstone Graphs/6.1 Values from Models w verification dummies.png"></p>
+ 
+### <a id="4b">4b. Models without Verification Dummies</a>
+Modified model to take in training set without Dummies of Host Verifications and saw a slight increase in average accuracy 
+and an increase in average recall.
+<p align="center"><img src="AirBnb Capstone Graphs/6.2 ROC curve w_o verification dummies.pngg"></p>
 
-### <a id="4b">4b. Models WITH Verification Dummies</a>
-<p align="center"><img src="AirBnb Capstone Graphs/1.1 Hist - Listings based on daily price.png"></p>
+<p align="center"><img src="AirBnb Capstone Graphs/6.2 Values from Models w_o verification dummies.png"></p>
 
 ---
 ## <a id="Conclusions">Conclusions</a>
-
+In conclusion, the models have a good predictive accuracy on whether a host is on it's way to become a superhost based on certain attributes.
 
 ---
 ## <a id="FuturePlans">Future Plans</a>
@@ -150,8 +108,8 @@ https://pypi.org/project/langua/
 
 ---
 ## <a id="Contact">Contact</a>
-Feel free to contact me about any questions. I can be reached through these links.
-[LinkedIn](https://www.linkedin.com/in/winrichsy/)
-[Email](winrichsy@gmail.com)
+Feel free to contact me about any questions. I can be reached through these links.  
+[LinkedIn](https://www.linkedin.com/in/winrichsy/)  
+[Email](winrichsy@gmail.com)  
   
 version 1.0 - EDA on Superhosts on Airbnb, number of listings available, average pricing. 
