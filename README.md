@@ -1,7 +1,6 @@
 # **AirBnBusiness**  
 ## Description  
-AirBnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that location. There is a wide selection of properties for travelers to rent for a period of time. Hosts don't have to pay to list their properties on AirBnb's marketplace and they can also set their own pricing. Locals in the area can also list their services and guides to entertain guests as well. With over tens of millions of users a year, the number of listings as well as competitiveness of bringing in renters have increased. As of 2019, AirBnb was last evaluated at $31 billion. My project here is to get a better understanding of the ins and outs of being a successful host on Airbnb. 
-
+A deep dive into the Paris AirBnb dataset to get a better understanding on successful hosts on AirBnb. What is needed to gain Superhost status based on various attributes and predict if hosts are on their way to gain that status. 
 
 ## Table of Contents
 [1. Background & Motivation](#Background&Motivation)<br>
@@ -22,7 +21,7 @@ AirBnb is an online marketplace that connects people who want to rent out their 
 [8. Contact](#Contact)<br>
 
 ## <a id="Background&Motivation">Background & Motivation</a>
-The **goal of this project** blahblabhalbha
+AirBnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that location. There is a wide selection of properties for travelers to rent for a period of time. Hosts don't have to pay to list their properties on AirBnb's marketplace and they can also set their own pricing. Locals in the area can also list their services and guides to entertain guests as well. With over tens of millions of users a year, the number of listings as well as competitiveness of bringing in renters have increased. As of 2019, AirBnb was last evaluated at $31 billion. My project here is to get a better understanding of the ins and outs of being a successful host on Airbnb. 
 
 ---
 ## <a id="DataSource">DataSource</a>
