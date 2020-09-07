@@ -4,7 +4,7 @@ A deep dive into the Paris AirBnb dataset to get a better understanding on succe
 
 ## Table of Contents
 [1. Background & Motivation](#Background&Motivation)<br>
-[2. Data Source](#Data Source)<br>
+[2. Data Source](#DataSource)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2a. About The Data](#data)<br>
 [3. Exploratory Data Analysis](#EDA)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3a. Listings Based on Average Price](#3a)<br>
@@ -24,7 +24,7 @@ A deep dive into the Paris AirBnb dataset to get a better understanding on succe
 AirBnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that location. There is a wide selection of properties for travelers to rent for a period of time. Hosts don't have to pay to list their properties on AirBnb's marketplace and they can also set their own pricing. Locals in the area can also list their services and guides to entertain guests as well. With over tens of millions of users a year, the number of listings as well as competitiveness of bringing in renters have increased. As of 2019, AirBnb was last evaluated at $31 billion. My project here is to get a better understanding of the ins and outs of being a successful host on Airbnb. 
 
 ---
-## <a id="Data Source">Data Source</a>
+## <a id="DataSource">Data Source</a>
 AirBnb Paris Data Downloaded from   
 http://insideairbnb.com/get-the-data.html  
 
